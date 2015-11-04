@@ -1,5 +1,5 @@
 //temporary config var here
-var API_HOME = 'http://localhost:3000/api/';
+var API_HOME = 'http://sodocan.herokuapp.com/api/';
 angular.module( 'sodocan', [])
 
 .config(function($locationProvider){
