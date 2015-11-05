@@ -92,6 +92,7 @@ angular.module( 'sodocan', [])
       cb: cb
     };
   };
+  console.log(projectURL); 
 
   // Handle HTTP request to API here; requests project if not passed
   // API URL string
