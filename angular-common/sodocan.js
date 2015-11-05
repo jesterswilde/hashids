@@ -13,7 +13,7 @@ angular.module( 'sodocan', [])
    *
    */
 
-  var projectURL = API_HOME+projectName+'/';
+  var projectURL = API_HOME+'Hashids.js'+'/';
   
   // Takes context data from functions, either as arguments (array) or ref obj
   // and returns parsed object (URL, ref, and callback)
