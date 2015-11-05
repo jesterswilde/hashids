@@ -1,5 +1,6 @@
 //temporary config var here
-var API_HOME = 'http://sodocan.herokuapp.com/api/';
+var API_HOME = 'http://sodocan-staging.herokuapp.com/api/';
+var projectName = 'Hashids.js';
 angular.module( 'sodocan', [])
 
 .config(function($locationProvider){
@@ -12,7 +13,6 @@ angular.module( 'sodocan', [])
   /* Private members
    *
    */
-  var projectName = 'Hashids.js';
   var projectURL = API_HOME+projectName+'/';
   
   // Takes context data from functions, either as arguments (array) or ref obj
