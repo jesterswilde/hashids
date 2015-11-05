@@ -7,13 +7,13 @@ angular.module( 'sodocan', [])
   $locationProvider.html5Mode(true).hashPrefix('!');
 })
 
-.factory('sodocanAPI', ['$http', 'projectName', function($http,projectName) {
+.factory('sodocanAPI', ['$http', function($http) {
 
   /* Private members
    *
    */
-  projectName = 'Hashids.js';
-  var projectURL = API_HOME+'projectName'+'/';
+  var projectName = 'Hashids.js';
+  var projectURL = API_HOME+projectName+'/';
   
   // Takes context data from functions, either as arguments (array) or ref obj
   // and returns parsed object (URL, ref, and callback)
