@@ -5,7 +5,7 @@ angular.module( 'sodocan', [])
 
 .config(function($locationProvider){
   //should prob contain most of what's in sodocanCtrl
-  $locationProvider.html5Mode(true).hashPrefix('!');
+  //$locationProvider.html5Mode(true).hashPrefix('!');
 })
 
 .factory('sodocanAPI', ['$http', function($http) {
