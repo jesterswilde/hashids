@@ -96,6 +96,7 @@ angular.module( 'sodocan', [])
   // Handle HTTP request to API here; requests project if not passed
   // API URL string
   var getFromAPI = function(url,cb) {
+    console.log(projectURL); 
     url = projectURL+url;
     var success = function(data) { cb(null,data.data); };
     $http.get(url).then(success,cb);
