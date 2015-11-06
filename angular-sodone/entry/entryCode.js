@@ -3,7 +3,7 @@ angular.module('sodocan')
   return{
     restrict: 'A',
     replace: true,
-    templateUrl: '/angular-sodone/entry/entryTpl.html'
+    templateUrl: 'angular-sodone/entry/entryTpl.html'
   };
 })
 .controller('sodocanEntryCtrl',['$scope', 'sodocanAPI', 'sodocanRouter', 'projectName',

@@ -3,7 +3,7 @@ angular.module('sodocan')
   return{
     restrict: 'A',
     replace: true,
-    templateUrl: '/angular-sodone/explanation/explanationTpl.html'
+    templateUrl: 'angular-sodone/explanation/explanationTpl.html'
   };
 })
 .controller('sodocanExplanationCtrl',
