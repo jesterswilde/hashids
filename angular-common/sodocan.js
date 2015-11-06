@@ -1,5 +1,5 @@
 //temporary config var here
-var API_HOME = 'http://sodocan.herokuapp/api/';
+var API_HOME = 'http://sodocan.herokuapp.com/api/';
 //underscore below
 //var API_HOME = 'http://sodocan.herokuapp.com/api/';
 angular.module( 'sodocan', [])
