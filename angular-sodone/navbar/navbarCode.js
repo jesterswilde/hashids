@@ -3,7 +3,7 @@ angular.module('sodocan')
   return{
     restrict: 'A',
     replace: true,
-    templateUrl: '../angular-sodone/navbar/navbarTpl.html'
+    templateUrl: '/angular-sodone/navbar/navbarTpl.html'
   };
 })
 .controller('sodocanNavbarController', ['$scope', 'sodocanAPI', 'sodocanRouter', '$window',
