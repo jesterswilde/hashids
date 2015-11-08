@@ -15,6 +15,8 @@ var app = angular.module('sodocan')
 .controller('sodocanAppCtrl',
             ['$scope','sodocanAPI','sodocanRouter',
               function($scope,sodocanAPI,sodocanRouter) {
+
+  $scope.projectName = projectName;               
   var update = function(path) {
     $scope.contentDisp = path;
   };
