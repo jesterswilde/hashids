@@ -59,7 +59,7 @@ angular.module('sodocan')
       bgStyle: {
         opacity: 0.2
       },
-      templateUrl: '../angular-sodone/expGlobalModal/expGlobalModalTpl.html'
+      templateUrl: 'angular-sodone/expGlobalModal/expGlobalModalTpl.html'
     };
     $scope.$emit('clickedShowModal', modalSettings); 
   };
@@ -81,7 +81,7 @@ angular.module('sodocan')
       bgStyle: {
         opacity: 0.9
       },
-      templateUrl: '../angular-sodone/authModal/loginModalTpl.html'
+      templateUrl: 'angular-sodone/authModal/loginModalTpl.html'
     };
     $scope.$emit('clickedShowModal', modalSettings); 
   };
@@ -105,7 +105,7 @@ angular.module('sodocan')
       bgStyle: {
         opacity: 0.9
       },
-      templateUrl: '../angular-sodone/authModal/signupModalTpl.html'
+      templateUrl: 'angular-sodone/authModal/signupModalTpl.html'
     };
     $scope.$emit('clickedShowModal', modalSettings); 
   };

@@ -74,7 +74,7 @@ angular.module('sodocan')
       bgStyle: {
         opacity: 0.2
       },
-      templateUrl: '../angular-sodone/expLocalModal/expLocalModalTpl.html'
+      templateUrl: 'angular-sodone/expLocalModal/expLocalModalTpl.html'
     };
     $scope.$emit('clickedShowModal', modalSettings); 
   };
