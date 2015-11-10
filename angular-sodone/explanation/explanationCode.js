@@ -12,7 +12,12 @@ angular.module('sodocan')
 
   $scope.hideTextArea = true; 
   $scope.toggleTextArea = function(){
-    $scope.hideTextArea = !$scope.hideTextArea;
+    if(sodocanAPI.authToken){
+      $scope.hideTextArea = !$scope.hideTextArea;
+    }
+    else{
+      $scope.showLoginModal(); 
+    }
   };
 
   //This is about posting your rentires immediately, without talking to server
@@ -140,5 +145,27 @@ angular.module('sodocan')
       $scope.loadEntries(num);
     }
   });
+
+  $scope.showLoginModal = function(event){
+    //The modal takes in this json as properties for the window
+    //there is an example of a centered modal in modalCode
+    var width = 600; 
+    var modalSettings = {
+      windowStyle: {
+        top:0,
+        left:0,
+        right:0,
+        bottom:0,
+        margin:'auto',
+        width: '350px',
+        height: '250px'
+      },
+      bgStyle: {
+        opacity: 0.9
+      },
+      templateUrl: 'angular-sodone/authModal/loginModalTpl.html'
+    };
+    $scope.$emit('clickedShowModal', modalSettings); 
+  };
 
 }]);

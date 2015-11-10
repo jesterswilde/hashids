@@ -9,8 +9,13 @@ angular.module('sodocan')
 .controller('sodocanEntryCtrl',['$scope', 'sodocanAPI', 'sodocanRouter', 'projectName',
   function($scope, sodocanAPI, sodocanRouter, projectName){
     $scope.upvote = function(){
-      $scope.entry.upvotes++;
-      $scope.sendUpvote(); 
+      if(sodocanAPI.authToken){
+        $scope.entry.upvotes++;
+        $scope.sendUpvote(); 
+      }
+      else{
+        $scope.showLoginModal(); 
+      }
     };
     $scope.sendUpvote = function(commentID){
       var project = projectName;
@@ -42,7 +47,12 @@ angular.module('sodocan')
 
     $scope.hideTextArea = true; 
     $scope.toggleTextArea = function(){
-      $scope.hideTextArea = !$scope.hideTextArea; 
+      if(sodocanAPI.authToken){
+        $scope.hideTextArea = !$scope.hideTextArea; 
+      }
+      else{
+        $scope.showLoginModal(); 
+      }
     };
 
     //entryID,ref,context,text,cb
